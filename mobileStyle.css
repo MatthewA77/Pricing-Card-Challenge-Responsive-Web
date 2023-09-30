@@ -1,0 +1,144 @@
+html {
+    box-sizing: border-box;
+    /* how to make a fit to screen backgorund img */
+    height: 100%;
+    background-image: url(https://img.freepik.com/free-vector/abstract-simple-background_53876-99863.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+body {
+    font-family: 'Karla', sans-serif;
+    padding: 30px;
+    /* This code makes the card to be in the center of a webpage */
+    margin: auto;
+    max-width: 690px;
+    /* TO GUARANTEE A FIT TO SCREEN IMAGE WE USE THE HEIGHT PROP HERE TOO */
+    height: 100%;
+}
+
+h1, h3, p {
+    margin: 0;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+.content {
+    /* width: 800px;
+    height: 480px; */ 
+    /* commenting this out in order to make this mobile-first */
+    box-shadow: -1px 1px 16px 5px rgba(0,0,0,0.17);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.container-top {
+    width: 100%;
+    height: 45%;
+    background-color: white;
+    padding: 35px;
+}
+
+.container-bottom {
+    width: 100%;
+    height: 55%;
+    color: white;
+}
+
+.container-bottom-left {
+    /* width: 50%; */
+    width: 100%;
+    height: 100%;
+    background-color: #2ab2af;
+    padding: 35px;
+}
+
+.container-bottom-right {
+    /* width: 50%; */
+    width: 100%;
+    height: 100%;
+    background-color: #44c3c1;
+    padding: 35px;
+}
+
+.container-bottom-left, .container-bottom-right {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.container-top h1 {
+    color: #2ab2af;
+    margin-bottom: 18px;
+}
+
+.subheading-top {
+    color: #c0df34;
+    margin-bottom: 14px;
+}
+
+.top-text-1 {
+    color: #98a6bd;
+}
+
+.price {
+    margin-top: 18px;
+    margin-bottom: 10px;
+}
+
+.month {
+    color: #e5eff5;
+    display: inline-block;
+    position: relative;
+    top: -10px;
+    margin-left: 7px;
+    opacity: 0.7;
+}
+
+.sign-up {
+    background-color: #c0df34;
+    border: none;
+    box-shadow: -1px 1px 32px 3px rgba(0,0,0,0.17);
+    border-radius: 2px;
+    width: 100%;
+    color: white;
+    font-size: 1.5rem;
+    height: 50px;
+    margin-top: 25px;
+}
+
+.sign-up:hover {
+    cursor: pointer;
+    background-color: #C9EB36;
+    transform: scale(1.02);
+}
+
+.dollar {
+    font-size: 2.5rem;
+    display: inline-block;
+    font-weight: 700;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+li {
+    margin-bottom: 5px;
+    color: #e5eff5;
+    opacity: 0.8;
+}
+
+/* We will make this web responsive using mobile-first approach (the recommended way) */
+@media (min-width: 768px) {
+    .content {
+        width: 690px;
+        height: 480px;
+    }
+    .container-bottom-left, .container-bottom-right {
+        width: 50%;
+    }
+}
