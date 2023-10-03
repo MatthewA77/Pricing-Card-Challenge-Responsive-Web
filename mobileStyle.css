@@ -1,7 +1,7 @@
 html {
     box-sizing: border-box;
     /* how to make a fit to screen backgorund img */
-    height: 100%;
+    /* height: 100%; */
     background-image: url(https://img.freepik.com/free-vector/abstract-simple-background_53876-99863.jpg);
     background-position: center;
     background-size: cover;
@@ -15,7 +15,7 @@ body {
     margin: auto;
     max-width: 690px;
     /* TO GUARANTEE A FIT TO SCREEN IMAGE WE USE THE HEIGHT PROP HERE TOO */
-    height: 100%;
+    /* height: 100%; */
 }
 
 h1, h3, p {
@@ -140,5 +140,14 @@ li {
     }
     .container-bottom-left, .container-bottom-right {
         width: 50%;
+    }
+
+    /* FIXING THE BG IMAGE TO FIT SCREEN AND MAKE THE CARD CENTER WHEN THE WIDTH IS 768px */
+    html {
+        height: 100%;
+    }
+    body {
+        padding: 30px 0px 0px 0px;
+     /* padding : top right bottom left */
     }
 }
